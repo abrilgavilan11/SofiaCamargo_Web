@@ -57,7 +57,6 @@ Si querés clonar este proyecto y correrlo en tu máquina local, seguí estos pa
     ```bash
     npm run dev
     ```
---------------------------------------------------------------------------------------------
 
 👩‍💻 Desarrollado por:
 

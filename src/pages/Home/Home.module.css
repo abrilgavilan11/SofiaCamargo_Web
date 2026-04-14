@@ -1,0 +1,15 @@
+/* src/pages/home/Home.module.css */
+
+.homeContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-light); /* Fondo general de la página */
+}
+
+/* El main va a crecer para ocupar todo el espacio entre el Navbar y el Footer */
+.mainContent {
+  flex: 1;
+  width: 100%;
+}

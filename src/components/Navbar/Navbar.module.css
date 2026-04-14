@@ -1,0 +1,123 @@
+/* --- Navbar Base --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(235, 215, 255, 0.7) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Ajustá este alto si sentís que el logo queda muy grande o chico */
+.navLogoImg {
+  height: 40px; 
+}
+
+/* --- Links del Menú --- */
+.navMenu {
+  display: none; /* Por defecto oculto en mobile */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #e91e63; /* El color fucsia de Evolución */
+}
+
+/* --- Botón Hamburguesa --- */
+.hamburgerBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  z-index: 1001; /* Para que quede siempre por encima del menú desplegado */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-dark);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* La altura aproximada de la navbar */
+    left: -100%; /* Oculto a la izquierda */
+    width: 100%;
+    background-color: var(--bg-light);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+  }
+
+  .navMenu li {
+    margin: 15px 0;
+  }
+
+  /* Cuando React le agrega la clase .active, el menú entra a la pantalla */
+  .navMenu.active {
+    left: 0;
+  }
+
+  /* Animación: Transformar hamburguesa en X */
+  .hamburgerBtn.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburgerBtn.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerBtn.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* --- RESPONSIVE DESKTOP --- */
+@media (min-width: 769px) {
+  .hamburgerBtn {
+    display: none; /* Ocultamos la hamburguesa en PC */
+  }
+  
+  .navMenu {
+    display: flex;
+    gap: 25px;
+  }
+}

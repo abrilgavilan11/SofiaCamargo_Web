@@ -1,0 +1,45 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Colores principales */
+  --primary-color: #915d96;
+  --secondary-color: #9327eb;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --bg-light: #e8d5f8;
+  --bg-gray: #f8f9fa;
+  --red-warning: #e74c3c;
+  --green-success: #2ecc71;
+  --yellow-warning: #f1c40f;
+  
+  /* Tipografía */
+  --font-main: "Poppins", sans-serif;
+  
+  /* Espaciados y bordes */
+  --border-radius: 12px;
+}
+
+/* --- RESET BÁSICO --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+/* Estilos globales básicos para títulos y botones si lo deseás */
+a {
+  text-decoration: none;
+}
