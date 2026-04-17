@@ -24,15 +24,15 @@ const Footer = () => {
         {/* Contacto */}
         <div className={styles.footerSection}>
           <h4>Contacto</h4>
-          <a href="tel:+54929942142256" className={styles.footerLink}>
-            <span className={styles.icon}>📞</span> 299 421 42256
+          <a href="tel:+54 9 2994 21-4256" className={styles.footerLink}>
+            <span className={styles.icon}>📞</span>tel: +54 9 2994 21-4256
           </a>
           <a
-            href="mailto:sofiacaamargoconcejal@gmail.com"
+            href="mailto:sofiacamargoconcejal@gmail.com"
             className={styles.footerLink}
           >
             <span className={styles.icon}>✉️</span>{" "}
-            sofiacaamargoconcejal@gmail.com
+            gmail: sofiacamargoconcejal@gmail.com
           </a>
         </div>
 
@@ -47,16 +47,9 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={styles.footerLink}
           >
-            <span className={styles.icon}>📸</span> soficamargoconcejal
+            <span className={styles.icon}>📸</span>ig: soficamargoconcejal
           </a>
-          <a
-            href="https://tiktok.com/@soficamargoconcejal"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.footerLink}
-          >
-            <span className={styles.icon}>🎵</span> soficamargoconcejal
-          </a>
+          
         </div>
 
         <hr className={styles.footerDivider} />

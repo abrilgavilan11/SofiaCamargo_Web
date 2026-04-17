@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import PersonalInfo from "../../components/PersonalInfo/PersonalInfo";
 import Projects from "../../components/Projects/Projects";
+import ActionForm from "../../components/ActionForm/ActionForm";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Hero />
       <PersonalInfo />
       <Projects />
+      <ActionForm />
       <Footer />
     </div>
   );

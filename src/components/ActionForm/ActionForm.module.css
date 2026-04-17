@@ -1,0 +1,99 @@
+.actionSection {
+  padding: 80px 20px;
+  background-color: var(--bg-light); 
+}
+
+.containerAction {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.sectionIntro {
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.sectionIntro strong {
+  color: var(--primary-color);
+}
+
+/* --- Tarjeta del Formulario --- */
+.formCard {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px 20px;
+  box-shadow: 0 10px 30px rgba(147, 39, 235, 0.05);
+  border: 1px solid rgba(147, 39, 235, 0.1);
+  margin-bottom: 40px;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formHeader h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.formHeader p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.iframeContainer {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--bg-gray);
+  border: 1px solid #eee;
+}
+
+/* --- Botones de Acción --- */
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btnActionOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 16px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.btnIcon {
+  font-size: 1.2rem;
+}
+
+.btnActionOutline:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(147, 39, 235, 0.2);
+}

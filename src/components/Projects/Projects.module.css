@@ -34,12 +34,12 @@
 
 @media (min-width: 768px) {
   .projectsGrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 .projectCard {
-  border: 1px solid rgba(147, 39, 235, 0.1);
+  border: 3px solid rgba(75, 19, 122, 0.1);
   border-radius: 20px;
   background-color: #fff;
   padding: 30px 20px;
