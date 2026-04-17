@@ -2,6 +2,7 @@ import styles from "./Home.module.css";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
+import PersonalInfo from "../../components/PersonalInfo/PersonalInfo";
 import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <div className={styles.homeContainer}>
       <Navbar />
       <Hero />
+      <PersonalInfo />
       <Footer />
     </div>
   );
