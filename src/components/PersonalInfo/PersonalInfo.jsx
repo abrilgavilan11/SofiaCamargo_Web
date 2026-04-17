@@ -64,22 +64,6 @@ const PersonalInfo = () => {
           </div>
         </div>
 
-        {/* Tarjeta de Contacto */}
-        <div className={styles.contactCard}>
-          <a href="tel:+54929942142256" className={styles.contactRow}>
-            <div className={styles.iconWrapper}>📞</div>
-            <span>299 421 42256</span>
-          </a>
-          <div className={styles.divider}></div>
-          <a
-            href="mailto:sofiacamargoconcejal@gmail.com"
-            className={styles.contactRow}
-          >
-            <div className={styles.iconWrapper}>✉️</div>
-            <span>sofiacamargoconcejal@gmail.com</span>
-          </a>
-        </div>
-
         {/* Carrusel de Círculos Arrastrable */}
         <div
           className={`${styles.circleCarousel} ${isDown ? styles.active : ""}`}
